@@ -1,11 +1,10 @@
 language: ruby
 rvm:
- - 2.2 
-
- deploy: 
+- 2.2
+deploy:
   provider: heroku
   api_key:
-   secure: "844ba685-b527-4ef1-b20b-e96a64f6bd6a"
+    secure: D58v+K0Wh/o6agXevLQEpjTXezODtTDqedxG4EXaI/Xv9fJKXXdvzuU8zpjGCSmuIriBqOzO9N3AhPKCvYrVTocXJQZbN8K7IvAOrIxq93VUUTXv7y/pdKPEW49OoCcM46BeivyCh1yI4I1+y8WEiFp/uAXMIHq4BQQzeobLMOLz05T1X+vUedeUl/XfW3hkJ506ax5ZlUkOhFqQDuyGGWhLQ0ZnFJvbzIJQR7haaM3FUk7aq1bo8n2oQXrZHEKQBz4bgax3d0MNEQBw4CCCbrh0b8k+kmkahQZ4HYeWuGe4QxEotv8/LvkHQbv9yYdLY+V/mrINVTJuOMQeA3fVg4OfMUNyW6UgQ3vB/eH68eV9lQ2VJ1n3g2LKPlsKwhmdqCpw0IPRy8PjNPVAqMRilcGOEGjPsnVcUheLnvxBqJnvv7DwPt02W5pv6X75Y5forcApPCBJma69wqsdhRyD4xz6SbUHAMVGldny3suBzcyy1N6vf0KVlmHqcK521b4dvDnNT3lonAeRT62cvtR8d4i56hQaWyvXLcy6mnikKBl6pwy478/JAjQhUtX32zhwvVfNFXVhvbAIdLbsVpLzgcJU2trc4CwMY558bcduZIboex4Lcq/4YmGGXiqoibjFAt6BBSbxh2sYvSARxdNjbEvUX4QVw63ptc5WYAM1ydM=
   app: projetlpa2apardieu
-  
-  
+  on:
+    repo: apardieu/projet
