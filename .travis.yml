@@ -8,3 +8,5 @@ deploy:
   app: projetlpa2apardieu
   on:
     repo: apardieu/projet
+  run: "rake db:migrate"
+  
