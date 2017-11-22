@@ -10,6 +10,8 @@ class TownsController < ApplicationController
   # GET /towns/1
   # GET /towns/1.json
   def show
+    forecast = ForecastIO.forecast(@town.latitude, @town.longitude)
+    render locals: { resource:  forecast}
   end
 
   # GET /towns/new
@@ -69,6 +71,6 @@ class TownsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def town_params
-      params.require(:town).permit(:name, :lat, :lon)
+      params.require(:town).permit(:name, :latitude, :longitude)
     end
 end
